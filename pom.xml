@@ -12,9 +12,38 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <org.apache.poi.version>3.5-FINAL</org.apache.poi.version>
   </properties>
 
   <dependencies>
+      <dependency>
+          <groupId>commons-digester</groupId>
+          <artifactId>commons-digester</artifactId>
+          <version>2.1</version>
+          <scope>provided</scope>
+      </dependency>
+      <!-- MAIL-->
+      <dependency>
+          <groupId>javax.mail</groupId>
+          <artifactId>mail</artifactId>
+          <version>1.4.3</version>
+          <scope>provided</scope>
+      </dependency>
+      <!-- APACHE POI -->
+      <dependency>
+          <groupId>org.apache.poi</groupId>
+          <artifactId>poi-scratchpad</artifactId>
+          <scope>provided</scope>
+          <version>${org.apache.poi.version}</version>
+      </dependency>
+      <!-- ITEX -->
+      <dependency>
+          <groupId>com.lowagie</groupId>
+          <artifactId>itext</artifactId>
+          <version>2.1.7</version>
+          <scope>provided</scope>
+      </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
